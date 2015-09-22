@@ -9,4 +9,5 @@
   				[org.clojure/tools.logging "0.2.3"]]
   :main ^:skip-aot sample.core
   :target-path "target/%s"
-  :profiles {:uberjar {:aot :all}})
+  :profiles {:dev {:plugins [[test2junit "1.1.1"]]}}
+  :test2junit-output-dir "../shippable/testresults")
